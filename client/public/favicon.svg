@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <style>
+      .hat { fill: none; stroke: currentColor; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; }
+      .band { fill: #e63946; }
+    </style>
+  </defs>
+  <circle cx="100" cy="70" r="40" class="hat"/>
+  <ellipse cx="100" cy="115" rx="60" ry="12" class="hat"/>
+  <rect x="70" y="75" width="60" height="6" class="band" rx="2"/>
+  <text x="200" y="145" font-family="'Bebas Neue',Impact,sans-serif" font-size="72" fill="currentColor" text-anchor="end">LUFFY</text>
+</svg>
