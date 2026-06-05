@@ -28,6 +28,16 @@ export function HeroBannerSkeleton() {
   );
 }
 
+export function FeaturedCarouselSkeleton() {
+  return (
+    <div className="max-w-[1400px] mx-auto px-4 md:px-8 pt-20">
+      <div className="w-full aspect-[16/9] md:aspect-[21/9] rounded-2xl overflow-hidden">
+        <Skeleton className="w-full h-full" />
+      </div>
+    </div>
+  );
+}
+
 export function DetailSkeleton() {
   return (
     <div className="space-y-8">
