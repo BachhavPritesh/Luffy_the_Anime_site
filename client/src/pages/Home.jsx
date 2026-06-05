@@ -1,6 +1,6 @@
 import { useGetTrendingQuery, useGetTopAnimeQuery, useGetSeasonalAnimeQuery, useGetGenresQuery } from '../features/anime/animeApi';
 import { useSelector } from 'react-redux';
-import HeroBanner from '../components/anime/HeroBanner';
+import FeaturedCarousel from '../components/anime/FeaturedCarousel';
 import AnimeRow from '../components/anime/AnimeRow';
 import AnimeCard from '../components/anime/AnimeCard';
 import { Link } from 'react-router-dom';
@@ -15,9 +15,9 @@ export default function Home() {
 
   return (
     <div>
-      <HeroBanner items={trending?.data} loading={trendingLoading} error={trendingError} />
+      <FeaturedCarousel items={trending?.data} loading={trendingLoading} error={trendingError} />
 
-      <div className="space-y-4 -mt-16 relative z-10">
+      <div className="space-y-4 mt-6">
         <AnimeRow title="Trending Now" items={trending?.data} loading={trendingLoading} />
         <AnimeRow title="This Season" items={seasonal?.data} loading={seasonalLoading} />
         <AnimeRow title="Top Rated All Time" items={topRated?.data} loading={topLoading} />
